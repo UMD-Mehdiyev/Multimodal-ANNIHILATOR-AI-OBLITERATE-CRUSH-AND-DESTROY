@@ -4,5 +4,6 @@ google-generativeai
 Pillow
 pydub
 moviepy
+python-dotenv
 opencv-python
 PyPDF2
