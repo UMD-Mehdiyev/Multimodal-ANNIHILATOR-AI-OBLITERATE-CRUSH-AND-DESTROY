@@ -1,0 +1,8 @@
+Flask
+firebase-admin
+google-generativeai
+Pillow
+pydub
+moviepy
+opencv-python
+PyPDF2
