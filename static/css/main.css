@@ -45,13 +45,36 @@ body {
     padding-top: 100px;
 }
 
+#input-form {
+    padding-top: 10px
+}
+
 #content {
     font-size: x-large;
     background-color: rgb(103, 105, 112);
     color: white;
 }
 
-#submit {
+#file-upload {
+    font-size: x-large;
+    color: white;
+}
+
+#text-btn {
+    width: 20%;
+    height: 40px;
+    font-size: 120%;
+    font-family: monospace;
+}
+
+#file-btn {
+    width: 20%;
+    height: 40px;
+    font-size: 120%;
+    font-family: monospace;
+}
+
+#submit-btn {
     width: 20%;
     height: 40px;
     font-size: 120%;

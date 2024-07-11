@@ -6,10 +6,17 @@
 
 {% block body %}
 <div class="container">
-    <form action="/" method="POST">
+    <div class="button-container">
+        <button id="text-btn">Text</button>
+        <button id="file-btn">File</button>
+      </div>
+    <form action="/" method="POST" id="input-form">
         <textarea name="content" id="content" rows="20" cols="100">Input the text that you would like to summarize...</textarea>
         <br>
-        <button type="submit" id="submit">Submit</button>
+        <input type="file" name="file" id="file-upload" hidden>
+        <br>
+        <br>
+        <button type="submit" id="submit-btn">Submit</button>
     </form>
 </div>
 {% endblock %}
