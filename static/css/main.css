@@ -3,4 +3,75 @@ body {
     font-family: monospace;
     text-align: center;
     font-size: x-large;
+    background-color: rgb(40, 44, 52);
+}
+
+.navbar {
+  background-color: rgb(22, 24, 28);  /* Set background color for the navbar */
+  color: white;            /* Set text color for the navbar links */
+  display: flex;           /* Arrange links horizontally */
+  padding: 10px 20px;       /* Add some padding for spacing */
+  position: fixed;          /* Fix the navbar to the top of the page */
+  top: 0;                   /* Position it at the top of the viewport */
+  left: 0;
+  width: 100%;              /* Make it span the entire width of the screen */
+}
+
+.navbar a {
+  text-decoration: none;   /* Remove underline from links */
+  color: inherit;          /* Inherit text color from navbar */
+  padding: 5px 10px;        /* Add some padding to each link */
+}
+
+.navbar a:hover {
+  background-color: #222;  /* Change background color on hover */
+}
+
+.navbar #title:hover {
+    background-color: rgb(22, 24, 28);
+}
+.navbar #title {
+    user-select: none;
+    color: rgb(152, 107, 1);
+    padding-left: 0;
+}
+
+.navbar #signin {
+    right: 0;
+    position: fixed;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+#content {
+    font-size: x-large;
+    background-color: rgb(103, 105, 112);
+    color: white;
+}
+
+#submit {
+    width: 20%;
+    height: 40px;
+    font-size: 120%;
+    font-family: monospace;
+}
+
+a.button {
+    padding: 2px 90px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+    width: 20%;
+    height: 40px;
+    font-size: 120%;
+    font-family: monospace;
+}
+
+#response {
+    color: white;
+    font-size: x-large;
 }

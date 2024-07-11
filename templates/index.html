@@ -5,7 +5,11 @@
 {% endblock %}
 
 {% block body %}
-<div class="Container">
-    <h1>Multimodal ANNIHILATOR AI OBLITERATE CRUSH AND DESTROY</h1>
+<div class="container">
+    <form action="/" method="POST">
+        <textarea name="content" id="content" rows="20" cols="100">Input the text that you would like to summarize...</textarea>
+        <br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
 </div>
 {% endblock %}

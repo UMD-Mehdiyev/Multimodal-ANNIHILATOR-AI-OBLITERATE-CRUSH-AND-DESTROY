@@ -7,6 +7,15 @@
     {% block header %}{% endblock %}
 </head>
 <body>
+    <header>
+        <nav class="navbar"> 
+            <a id="title">Multimodal ANNIHILATOR AI OBLITERATE CRUSH AND DESTROY</a>
+            <a href="/">Home</a> 
+            <a href="about">About</a> 
+            <a href="contact">Contact</a> 
+            <a id="signin" href="{{url_for('sign_in')}}">Signin/Register</a>
+        </nav>
+    </header>
     {% block body %}{% endblock %}
 </body>
 </html>

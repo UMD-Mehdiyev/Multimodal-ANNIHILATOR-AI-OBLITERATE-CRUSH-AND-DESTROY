@@ -1,4 +1,4 @@
 .env
 env
-api/serviceAccountKey.json
+serviceAccountKey.json
 api/__pycache__
