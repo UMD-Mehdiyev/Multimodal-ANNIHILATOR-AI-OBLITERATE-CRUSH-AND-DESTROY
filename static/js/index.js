@@ -5,11 +5,13 @@ window.onload = function() {
     const fileUpload = document.getElementById('file-upload');
 
     textBtn.addEventListener('click', () => {
+        fileUpload.value = "";
         textArea.hidden = false;
         fileUpload.hidden = true;
     });
 
     fileBtn.addEventListener('click', () => {
+        textArea.value = "";
         textArea.hidden = true;
         fileUpload.hidden = false;
     });
