@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
 from firebase_admin import credentials, initialize_app, firestore, storage
-import util.util
+import util
 import uuid
 import os
+
+import util.gemini
 
 cred = credentials.Certificate("serviceAccountKey.json")
 default_app = initialize_app(cred, {'storageBucket': 'multimodal-annihilator-ai.appspot.com'}) 
@@ -82,8 +84,8 @@ def response(content_id):
                 apply ai stuff
                 """
                 
-                processed_content = util.util.process(content)
-
+                #processed_content = util.util.process(content)
+                processed_content = util.gemini.process_text(content)
 
 
 
@@ -93,9 +95,6 @@ def response(content_id):
                 download_url = data['download_url']
                 doc_ref.delete()
                 _, downloaded_file = util.util.download_file(download_url)
-                
-                
-                
                 
                 """
                 apply ai stuff
