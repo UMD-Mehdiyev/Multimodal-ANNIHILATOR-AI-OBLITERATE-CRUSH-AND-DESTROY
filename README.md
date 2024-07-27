@@ -8,8 +8,8 @@
 
 - run `python -m venv env` to create your virtual environment
 
-- Windows: run `venv\Scripts\activate` (you have to run this each time you start a new terminal)
-- Mac: run `source venv/bin/activate` (you have to run this each time you start a new terminal)
+- Windows: run `env\Scripts\activate` (you have to run this each time you start a new terminal)
+- Mac: run `source env/bin/activate` (you have to run this each time you start a new terminal)
 
 - run `pip install -U -r requirements.txt` to install all the dependencies 
 
